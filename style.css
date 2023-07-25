@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.button{
+text-align: center;
+margin: 20px;
+
+}  
+.cleck-class { 
+    text-decoration: none;
+    display: inline-block;
+    background-color: red;
+    color: azure;
+    padding: 20px 60px;
+    border-radius: 5px;
+    position: relative; 
+    z-index:1; 
+}
+.cleck-class::before{
+    content: "";
+    width: 0;
+    height: 100%;
+    background-color: blueviolet;
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    z-index:-1;
+    transition: .5s;
+}
+.cleck-class:hover::before{
+    width: 100%;
+}
+.cleck-class2 { 
+    text-decoration: none;
+    display: inline-block;
+    background-color: red;
+    color: azure;
+    padding: 20px 60px;
+    border-radius: 5px;
+    position: relative; 
+    z-index:1; 
+    margin-left: 84px;
+}
+.cleck-class2::before{
+    content: "";
+    width: 0;
+    height: 100%;
+    background-color: blueviolet;
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    right: 0;
+    z-index:-1;
+    transition: .5s;
+}
+.cleck-class2:hover::before{
+    width: 100%;
+}
+.cleck-class3 { 
+    text-decoration: none;
+    display: inline-block;
+    background-color: red;
+    color: azure;
+    padding: 20px 60px;
+    border-radius: 5px;
+    position: relative; 
+    z-index:1; 
+    margin-left: 84px;
+}
+.cleck-class3::before{
+    content: "";
+    width: 100%;
+    height:0%;
+    background-color: blueviolet;
+    position: absolute;
+    border-radius: 5px;
+    bottom: 0;
+    right: 0;
+    
+    z-index:-1;
+    transition: .5s;
+}
+.cleck-class3:hover::before{
+    height: 100%;
+}  
+.cleck-class4 { 
+    text-decoration: none;
+    display: inline-block;
+    background-color: red;
+    color: azure;
+    padding: 20px 60px;
+    border-radius: 5px;
+    position: relative; 
+    z-index:1; 
+    margin-left: 84px;
+}
+.cleck-class4::before{
+    content: "";
+    width: 100%;
+    height:0%;
+    background-color: blueviolet;
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    
+    z-index:-1;
+    transition: .5s;
+}
+.cleck-class4:hover::before{
+    height: 100%;
+}  
+.cleck-class5 { 
+    text-decoration: none;
+    display: inline-block;
+    background-color: red;
+    color: azure;
+    padding: 10px 60px;
+    border-radius: 5px;
+    position: relative; 
+    z-index:1; 
+    margin-left: 84px;
+}
+.cleck-class5::before{
+    content: "";
+    width:0%;
+    height:100%;
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    z-index:-1;
+    transition: .5s;
+}
+.cleck-class5:hover::before{
+    width: 50%;
+    background-color: darkgray;
+}
+.cleck-class5::after{
+    content: "";
+    width:0%;
+    height:100%;
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    right:0;
+    z-index:-1;
+    transition: .5s;
+}
+.cleck-class5:hover::after{
+    width:50%;
+    background-color: black;
+    
+}
+ h1{
+    text-align: center;
+    background-color: aqua;
+    color: blanchedalmond;
+    padding: 10px 5px;
+    margin-top: 10px;
+ }   
+ h1::before{
+    content: "This ";
+ }
+ h1::after{
+    content: "Tag ";
+ }
